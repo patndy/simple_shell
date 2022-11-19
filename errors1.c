@@ -81,7 +81,6 @@ int print_d(int input, int fd)
 	}
 	__putchar('0' + current);
 	count++;
-	
 	return (count);
 }
 
@@ -94,12 +93,13 @@ int print_d(int input, int fd)
  * Return: string
  */
 char *convert_number(long int num, int base, int flags)
-{	static char *array;
+{
+	static char *array;
 	static char buffer[50];
 	char sign = 0;
 	char *ptr;
 	unsigned long n = num;
-	
+
 	if (!(flags & CONVERT_UNSIGNED) && num < 0)
 	{
 		n = -num;
@@ -128,7 +128,7 @@ char *convert_number(long int num, int base, int flags)
 void remove_comments(char *buf)
 {
 	int i;
-	
+
 	for (i = 0; buf[i] != '\0'; i++)
 		if (buf[i] == '#' && (!i || buf[i - 1] == ' '))
 		{
