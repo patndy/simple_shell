@@ -1,1 +1,1 @@
- C - Simple Shell project.
+ C - Simple Unix Shell Building.
