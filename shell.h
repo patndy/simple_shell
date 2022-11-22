@@ -82,7 +82,7 @@ typedef struct passinfo
 	int err_num;
 	int linecount_flag;
 	char *fname;
-	list_t *envlist
+	list_t *env;
 	list_t *history;
 	list_t *alias;
 	char **environ;
